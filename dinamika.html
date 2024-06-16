@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+         rel="stylesheet">
+   </head>
+   <body>
+
+      <div class="all-form-dinamika">
+
+         <form class="form-dinamika">
+            <div class="column">
+               <div class="container">
+                  <label сlass="container">Выберите дату с:</label>
+                  <input сlass="container" type="date" value="2024-06-01" min="2000-01-01" max="2030-12-31" />
+                  <label сlass="container">по:</label>
+                  <input сlass="container" type="date" value="2024-06-03" min="2000-01-01" max="2030-12-31" />
+               </div>
+            </div>
+
+            <div class="column">
+               <label class="container">Валюта:</label>
+               <div>
+                  <select>
+                     <option>USD</option>
+                     <option>EUR</option>
+                     <option>RUB</option>
+                  </select>
+               </div>
+
+               <div>
+                  <button class="btn-sending">Запросить</button>
+               </div>
+               
+            </div>
+
+            <table>
+               <caption>Курс валюты за период</caption>
+               <tr>
+                  <th >Дата</th>
+                  <th>Официальный курс</th>
+               </tr>
+               <tr>
+                  <td>01.06.2024</td>
+                  <td>3,2059</td>
+               </tr>
+               <tr>
+                  <td>02.06.2024</td>
+                  <td>3,2060</td>
+               </tr>
+               <tr>
+                  <td>03.06.2024</td>
+                  <td>3,2059</td>
+            </table>
+
+         </form>
+
+      </div>
+
+      <script src="script.js"></script>
+   </body>
+</html>

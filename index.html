@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 💲 Курсы валют НБРБ </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+    rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h3> Выберите из списка:</h3>
+    </div>
+
+    <div class="container">
+      <input type="checkbox" checked="checked">
+      <a href="index.html">
+        <label> Получить данные по валютам.</label>
+      </a>
+    </div>
+
+    <div class="container">
+      <input type="checkbox">
+      <a href="dinamika.html">
+        <label> Курс валюты в динамике.</label>
+      </a>
+    </div>
+
+    <div class="container">
+      <input type="checkbox">
+      <a href="converter.html">
+        <label> Конвертер валют.</label>
+      </a>
+    </div>
+
+    <div class="all-form">
+      <form class="form">
+
+        <div class="column">
+          <label class="container">Выберите дату:</label>
+          <input type="date" value="2024-01-01" min="2020-01-01" max="2030-31-12" />
+        </div>
+
+        <div class="column">
+          <button class="btn-sending">Запросить</button>
+        </div>
+
+        <table>
+          <caption> Официальные курсы белорусского рубля по отношению к иностранным валютам,
+            устанавливаемые Национальным банком</caption>
+          <tr>
+            <th> Наименование иностранной валюты </th>
+            <th> Количество единиц иностранной валюты, буквенный код валюты</th>
+            <th> Официальный курс</th>
+          </tr>
+
+          <tr>
+            <td>Доллар США</td>
+            <td>1 USD</td>
+            <td>3,1862</td>
+          </tr>
+
+          <tr>
+            <td>Евро</td>
+            <td>1 EUR</td>
+            <td>3,4234</td>
+          </tr>
+
+          <tr>
+            <td>Российский рубль</td>
+            <td>100 RUB</td>
+            <td>3,5806</td>
+        </table>
+
+      </form>
+    </div>
+
+    <div class="footer">
+      <button class="share" onClick='window.open("http://127.0.0.1:5501/index.html","sharer","status=0,toolbar=0,width=650,height=500");'
+      title="Поделиться">
+      </button>
+    </div>
+
+    <script src="script.js">
+    </script>
+  </body>
+
+</html>
